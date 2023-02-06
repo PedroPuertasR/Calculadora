@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#494949"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:background="#000000"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:gravity="bottom|end"
+                android:layout_margin="5dp"
+                android:paddingHorizontal="30dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="96sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="AC"
+                android:onClick="borrarDatos"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnME"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="ME"
+                android:onClick="pulsarME"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPorcen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#00FFFFFF"
+                android:onClick="borrarNum"
+                android:text="←"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="÷"
+                android:onClick="dividirNum"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="7"
+                android:onClick="pulsar7"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="8"
+                android:onClick="pulsar8"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="9"
+                android:onClick="pulsar9"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMulti"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="×"
+                android:onClick="multiNum"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="4"
+                android:onClick="pulsar4"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="5"
+                android:onClick="pulsar5"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="6"
+                android:onClick="pulsar6"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="-"
+                android:onClick="restarNum"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="1"
+                android:onClick="pulsar1"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="2"
+                android:onClick="pulsar2"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="3"
+                android:onClick="pulsar3"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:text="+"
+                android:onClick="sumarNum"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:background="#00FFFFFF"
+                android:text="0"
+                android:onClick="pulsar0"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnComa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#00FFFFFF"
+                android:onClick="ponerComa"
+                android:text=","
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_button"
+                android:text="="
+                android:onClick="mostrarResultado"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FF5722" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
